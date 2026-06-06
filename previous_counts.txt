@@ -1,0 +1,6 @@
+EC2=0
+S3=0
+LAMBDA=1
+IAM=1
+VPC=1
+SG=4

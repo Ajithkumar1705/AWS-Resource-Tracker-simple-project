@@ -1,0 +1,684 @@
+{
+    "Reservations": []
+}
+{
+    "Functions": [
+        {
+            "FunctionName": "cloud-config",
+            "FunctionArn": "arn:aws:lambda:ap-south-1:666432071447:function:cloud-config",
+            "Runtime": "python3.14",
+            "Role": "arn:aws:iam::666432071447:role/service-role/cloud-config-role-m92eig4q",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 299,
+            "Description": "",
+            "Timeout": 10,
+            "MemorySize": 128,
+            "LastModified": "2026-05-19T14:59:09.000+0000",
+            "CodeSha256": "R6fL2f5y9xHPTo4NojRtY2hz04DlAxWgwXm4xSMnwRQ=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "eed34303-7dcb-4638-b604-570fcde8deb6",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/cloud-config"
+            }
+        }
+    ]
+}
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "iam-codecommit",
+            "UserId": "AIDAZWKTSM4L75VUM64AA",
+            "Arn": "arn:aws:iam::666432071447:user/iam-codecommit",
+            "CreateDate": "2026-05-11T13:53:21+00:00",
+            "PasswordLastUsed": "2026-05-11T13:54:10+00:00"
+        }
+    ]
+}
+{
+    "Vpcs": [
+        {
+            "OwnerId": "666432071447",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-05312ef7db5f577d0",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true,
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-093c613906f894fbe",
+            "State": "available",
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0019c9e5caae53df2"
+        }
+    ]
+}
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0c8709402b73f4ce8",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-0c8709402b73f4ce8",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-3",
+            "Description": "launch-wizard-3 created 2026-05-19T15:04:47.325Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0b6663e4741784ce3",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-0b6663e4741784ce3",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-1",
+            "Description": "launch-wizard-1 created 2026-05-13T14:31:29.156Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-095f11969bb099faa",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-095f11969bb099faa",
+            "OwnerId": "666432071447",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "666432071447",
+                            "GroupId": "sg-095f11969bb099faa"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-05899d16f59e8413f",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-05899d16f59e8413f",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-2",
+            "Description": "launch-wizard-2 created 2026-05-14T11:16:09.188Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
+ EC2 - Instances list 
+{
+    "Reservations": []
+}
+ S3-Buckets List 
+lambda-function list 
+{
+    "Functions": [
+        {
+            "FunctionName": "cloud-config",
+            "FunctionArn": "arn:aws:lambda:ap-south-1:666432071447:function:cloud-config",
+            "Runtime": "python3.14",
+            "Role": "arn:aws:iam::666432071447:role/service-role/cloud-config-role-m92eig4q",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 299,
+            "Description": "",
+            "Timeout": 10,
+            "MemorySize": 128,
+            "LastModified": "2026-05-19T14:59:09.000+0000",
+            "CodeSha256": "R6fL2f5y9xHPTo4NojRtY2hz04DlAxWgwXm4xSMnwRQ=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "eed34303-7dcb-4638-b604-570fcde8deb6",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/cloud-config"
+            }
+        }
+    ]
+}
+ IAM-User list
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "iam-codecommit",
+            "UserId": "AIDAZWKTSM4L75VUM64AA",
+            "Arn": "arn:aws:iam::666432071447:user/iam-codecommit",
+            "CreateDate": "2026-05-11T13:53:21+00:00",
+            "PasswordLastUsed": "2026-05-11T13:54:10+00:00"
+        }
+    ]
+}
+List of VPCs
+{
+    "Vpcs": [
+        {
+            "OwnerId": "666432071447",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-05312ef7db5f577d0",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true,
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-093c613906f894fbe",
+            "State": "available",
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0019c9e5caae53df2"
+        }
+    ]
+}
+ List of Security groups
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0c8709402b73f4ce8",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-0c8709402b73f4ce8",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-3",
+            "Description": "launch-wizard-3 created 2026-05-19T15:04:47.325Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0b6663e4741784ce3",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-0b6663e4741784ce3",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-1",
+            "Description": "launch-wizard-1 created 2026-05-13T14:31:29.156Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-095f11969bb099faa",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-095f11969bb099faa",
+            "OwnerId": "666432071447",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "666432071447",
+                            "GroupId": "sg-095f11969bb099faa"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-05899d16f59e8413f",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-05899d16f59e8413f",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-2",
+            "Description": "launch-wizard-2 created 2026-05-14T11:16:09.188Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
+ EC2 - Instances list 
+{
+    "Reservations": []
+}
+ S3-Buckets List 
+lambda-function list 
+{
+    "Functions": [
+        {
+            "FunctionName": "cloud-config",
+            "FunctionArn": "arn:aws:lambda:ap-south-1:666432071447:function:cloud-config",
+            "Runtime": "python3.14",
+            "Role": "arn:aws:iam::666432071447:role/service-role/cloud-config-role-m92eig4q",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 299,
+            "Description": "",
+            "Timeout": 10,
+            "MemorySize": 128,
+            "LastModified": "2026-05-19T14:59:09.000+0000",
+            "CodeSha256": "R6fL2f5y9xHPTo4NojRtY2hz04DlAxWgwXm4xSMnwRQ=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "eed34303-7dcb-4638-b604-570fcde8deb6",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/cloud-config"
+            }
+        }
+    ]
+}
+ IAM-User list
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "iam-codecommit",
+            "UserId": "AIDAZWKTSM4L75VUM64AA",
+            "Arn": "arn:aws:iam::666432071447:user/iam-codecommit",
+            "CreateDate": "2026-05-11T13:53:21+00:00",
+            "PasswordLastUsed": "2026-05-11T13:54:10+00:00"
+        }
+    ]
+}
+List of VPCs
+{
+    "Vpcs": [
+        {
+            "OwnerId": "666432071447",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-05312ef7db5f577d0",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true,
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-093c613906f894fbe",
+            "State": "available",
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0019c9e5caae53df2"
+        }
+    ]
+}
+ List of Security groups
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0c8709402b73f4ce8",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-0c8709402b73f4ce8",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-3",
+            "Description": "launch-wizard-3 created 2026-05-19T15:04:47.325Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0b6663e4741784ce3",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-0b6663e4741784ce3",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-1",
+            "Description": "launch-wizard-1 created 2026-05-13T14:31:29.156Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-095f11969bb099faa",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-095f11969bb099faa",
+            "OwnerId": "666432071447",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "666432071447",
+                            "GroupId": "sg-095f11969bb099faa"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-05899d16f59e8413f",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-093c613906f894fbe",
+            "SecurityGroupArn": "arn:aws:ec2:ap-south-1:666432071447:security-group/sg-05899d16f59e8413f",
+            "OwnerId": "666432071447",
+            "GroupName": "launch-wizard-2",
+            "Description": "launch-wizard-2 created 2026-05-14T11:16:09.188Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
