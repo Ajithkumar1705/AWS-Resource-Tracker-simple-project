@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /home/ajith/AWS-Resource-Tracker-simple-project || exit 1
 ##################
 #Project : AWS-Resource-Tracker
 #Author : Ajith Kumar E
@@ -21,8 +21,7 @@ CURRENT_FILE="current_counts.txt"
 PREVIOUS_FILE="previous_counts.txt"
 LOG_FILE="log/aws_resource_tracker.log"
 {
-set -x #run in debug mode
-
+	echo "executed at $(date)"
 #list EC2 Instances
 
 echo " EC2 - Instances list "
@@ -87,6 +86,28 @@ if [ ! -f "$PREVIOUS_FILE" ]; then
     exit 0
 fi
 
+
+#Email Notification
+
+TOPIC_ARN="arn:aws:sns:ap-south-1:666432071447:aws-resource-tracker-alerts"
+
+if ! diff "$PREVIOUS_FILE" "$CURRENT_FILE" > /dev/null; then
+
+    CHANGES=$(diff "$PREVIOUS_FILE" "$CURRENT_FILE")
+
+    aws sns publish \
+        --topic-arn "$TOPIC_ARN" \
+        --subject "AWS Resource Change Detected" \
+        --message "Changes detected on $(date)
+
+$CHANGES
+
+Current Inventory:
+$(cat $CURRENT_FILE)"
+fi
+
+
 #Update previous file
 
 cp "$CURRENT_FILE" "$PREVIOUS_FILE"
+
