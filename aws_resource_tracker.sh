@@ -1,5 +1,4 @@
 #!/bin/bash
-cd /home/ajith/AWS-Resource-Tracker-simple-project || exit 1
 ##################
 #Project : AWS-Resource-Tracker
 #Author : Ajith Kumar E
@@ -16,7 +15,7 @@ cd /home/ajith/AWS-Resource-Tracker-simple-project || exit 1
 # previous runs, logs the results, and sends email notifications when
 # resource changes are detected.
 #
-# Technologies: Bash, AWS CLI, Cron Jobs
+# Technologies: Bash, AWS CLI
 CURRENT_FILE="current_counts.txt"
 PREVIOUS_FILE="previous_counts.txt"
 LOG_FILE="log/aws_resource_tracker.log"

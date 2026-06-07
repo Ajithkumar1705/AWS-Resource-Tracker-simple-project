@@ -3326,3 +3326,24 @@ lambda-function list
  IAM-User list
 List of VPCs
  List of Security groups
+executed at Sat Jun  6 12:01:01 PM EDT 2026
+ EC2 - Instances list 
+ S3-Buckets List 
+lambda-function list 
+ IAM-User list
+List of VPCs
+ List of Security groups
+executed at Sat Jun  6 12:02:01 PM EDT 2026
+ EC2 - Instances list 
+ S3-Buckets List 
+lambda-function list 
+ IAM-User list
+List of VPCs
+ List of Security groups
+executed at Sat Jun  6 12:03:02 PM EDT 2026
+ EC2 - Instances list 
+ S3-Buckets List 
+lambda-function list 
+ IAM-User list
+List of VPCs
+ List of Security groups
