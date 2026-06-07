@@ -9,6 +9,13 @@ The script collects resource inventory information from an AWS account, maintain
 This project was built to strengthen hands-on skills in AWS, Linux, Bash scripting, automation, and cloud resource monitoring.
 
 ---
+## Setup
+
+1. Configure AWS CLI
+2. Create SNS Topic
+3. Subscribe Email
+4. Clone Repository
+5. Run Script
 
 ## Features
 
@@ -40,12 +47,26 @@ aws-resource-tracker/
 ├── README.md
 ├── .gitignore
 │
-└── logs/
-    └── aws-resource-tracker.log
+└── log/
+    └── aws_resource_tracker.log
 ```
 
 ---
 
+# Architecture Structure
+
+
+AWS CLI
+   ↓
+Resource Collection
+   ↓
+current_counts.txt
+   ↓
+Compare
+   ↓
+SNS Notification
+   ↓
+previous_counts.txt
 ## How It Works
 
 1. The script queries AWS resources using AWS CLI.
